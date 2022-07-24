@@ -1,0 +1,27 @@
+extends layouts/LayoutTheme
+include mixins/navbar/Navbar
+include mixins/blogHero/BlogHero
+include mixins/allblogs/AllBlogs
+include mixins/promo/Promo
+include mixins/footer/Footer
+
+
+
+append variables
+  - 
+    var pageInfo = {
+      pageTitle: 'Blogs',
+    }
+
+
+append styles
+
+prepend scripts
+
+
+block content 
+  +Navbar(false,pageInfo.pageTitle)
+  +BlogHero
+  +AllBlogs
+  +Promo
+  +Footer

@@ -1,0 +1,31 @@
+mixin FAQ 
+  - 
+    var faq = [
+      {
+        id:"srgdgfdgdgg45",
+        id2:"srgdgfdgdgg45tyuu",
+        que:"We connect our customers with the best?",
+        ans:"Placeholder content for this accordion, which is intended to demonstrate the accordion-flush class. This is the first item's accordion body."
+      },
+      {
+        id:"sxvdgrfhfh276",
+        id2:"srgdgfdgdgg45tyuu5ghj",
+        que:"Android research & development rockstar? ",
+        ans:"Placeholder content for this accordion, which is intended to demonstrate the accordion-flush class. This is the first item's accordion body."
+      }
+    ]
+  +Section
+    img(src="assets/img/offer/3.png", alt="").w-100
+    .row.mt-5
+      .col-md-6
+        h2.fw-normal.fs-lg-5.fs-3.fs-md-4.lh-base We connect our customers with the best, and help them keep up-and stay open.
+      .col-md-6
+        .accordion.accordion-flush#accordionFlushExample
+          each item in faq 
+            .accordion-item
+            h2(id=item.id).accordion-header.border-bottom.border-2
+              button.accordion-button.collapsed.text-black(type="button" data-bs-toggle="collapse" data-bs-target=`#${item.id2}` aria-expanded="false" aria-controls="flush-collapseOne") 
+                p.m-0.fs-1= item.que
+            .accordion-collapse.collapse(aria-labelledby=item.id data-bs-parent="#accordionFlushExample" id=item.id2)
+              .accordion-body
+                p.m-0= item.ans

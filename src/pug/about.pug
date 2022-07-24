@@ -1,0 +1,33 @@
+extends layouts/LayoutTheme
+include mixins/navbar/Navbar
+include mixins/about/Hero
+include mixins/gallery/Gallery
+include mixins/numbers/Numbers
+include mixins/team/Team
+include mixins/values/Values
+include mixins/promo/Promo
+include mixins/footer/Footer
+
+
+
+append variables
+  - 
+    var pageInfo = {
+      pageTitle: 'About',
+    }
+
+
+append styles
+
+prepend scripts
+
+
+block content 
+  +Navbar(true, pageInfo.pageTitle)
+  +Hero
+  +Gallery
+  +Numbers
+  +Team
+  +Values
+  +Promo
+  +Footer
