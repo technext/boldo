@@ -3,11 +3,11 @@
 //- ===============================================
 
 mixin Section(container)
-  = '\n\n'
+  //- = '\n\n'
   // ============================================
   // <section> begin ============================
   section&attributes(attributes)
-    = '\n'
+    //- = '\n'
     //- Container for content
     - if (typeof(container) === 'undefined' || container === 'container') { container = 'container px-md-5 px-lg-9' }
     div(class=container)

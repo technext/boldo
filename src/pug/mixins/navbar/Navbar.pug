@@ -15,7 +15,7 @@ mixin Navbar(navbarDark, pageTitle)
             }
         ]
     if navbarDark
-        nav.navbar.navbar-expand-lg.fixed-top.w-100.py-3.navbar-dark(data-navbar-on-scroll)
+        nav.navbar.navbar-expand-lg.fixed-top.w-100.py-4.navbar-dark(data-navbar-on-scroll)
             .container.px-lg-9.px-md-5
                 a.navbar-brand(href="index.html")
                     img(src="assets/img/Logo.png", alt="logo")
@@ -29,7 +29,7 @@ mixin Navbar(navbarDark, pageTitle)
                         li.nav-item
                             a.nav-link.btn.bg-white.px-4.text-black.ms-2.w-md-25.w-50.w-lg-100(aria-current="page" href="#") Log In
     else 
-        nav.navbar.navbar-expand-lg.fixed-top.w-100.py-3.navbar-light.bg-primary(data-navbar-on-scroll)
+        nav.navbar.navbar-expand-lg.fixed-top.w-100.py-4.navbar-light.bg-primary(data-navbar-on-scroll)
             .container.px-lg-9.px-md-5
                 a.navbar-brand(href="#")
                     img(src="assets/img/Logo.png", alt="logo")
