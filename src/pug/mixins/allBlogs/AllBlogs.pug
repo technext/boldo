@@ -1,5 +1,5 @@
-mixin AllBlogs 
-  - 
+mixin AllBlogs
+  -
     var blogs = [
       {
           img:"assets/img/blog/1.png",
@@ -26,7 +26,7 @@ mixin AllBlogs
           avatar:"assets/img/blog/profile3.png",
       },
       {
-          img:"assets/img/blog/1.png",
+          img:"assets/img/blog/4.png",
           title:"Pitch termsheet backing validation focus release.",
           category:"Category",
           date:"November 22, 2021",
@@ -34,7 +34,7 @@ mixin AllBlogs
           avatar:"assets/img/blog/profile1.png",
       },
       {
-          img:"assets/img/blog/2.png",
+          img:"assets/img/blog/5.png",
           title:"Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
           category:"Category",
           date:"November 22, 2021",
@@ -42,7 +42,7 @@ mixin AllBlogs
           avatar:"assets/img/blog/profile2.png",
       },
       {
-          img:"assets/img/blog/3.png",
+          img:"assets/img/blog/6.png",
           title:"Beta prototype sales iPad gen-z marketing network effects value proposition",
           category:"Category",
           date:"November 22, 2021",
@@ -52,9 +52,9 @@ mixin AllBlogs
     ]
   .container.px-md-5.px-lg-9
     h1.fs-lg-6.fs-md-5.fs-3.fw-normal Letest News
-    .row.mt-5.gx-lg-7.gy-5.gy-md-0
+    .row.mt-5.gx-xl-7.gy-5.gy-md-0
       each blog in blogs
-        .col-lg-4.col-md-6.mb-5
+        .col-lg-4.col-md-6.mb-xl-5.mb-md-3
           img(src=blog.img, alt="").img-fluid.w-100
           .d-flex.align-items-center.gap-3.my-4
             p.fw-bold.fs-small.m-0.text-black= blog.category

@@ -1,19 +1,17 @@
 extends Layout
-//- include ../mixins/navbars/Navbar
-//- include ../mixins/footers/Footer
 include ../mixins/Variables
 
 
 append variables
   - var attrsBody = {  };
   - var breakPoint = 'lg';
-  - 
+  -
     var pageInfo = {
       pageTitle: 'Home',
       pageSubtitle: '',
     }
- 
-append title 
+
+append title
   title= `${pageInfo.pageTitle === 'Home' ? 'Boldo' : pageInfo.pageTitle} | ${pageInfo.pageSubtitle || 'Boldo Agency Template'}`
 
 append headScripts
@@ -24,7 +22,7 @@ block prepend styles
   link(href=`${CWD}vendors/prism/prism.css`, rel='stylesheet')
   link(href=`${CWD}vendors/swiper/swiper-bundle.min.css`, rel='stylesheet')
 
-  
+
 
 prepend scripts
   script(src=`${CWD}vendors/fontawesome/all.min.js`)
@@ -32,14 +30,14 @@ prepend scripts
   script(src=`https://polyfill.io/v3/polyfill.min.js?features=window.scroll`)
   script(src=`${CWD}vendors/prism/prism.js`)
   script(src=`${CWD}vendors/swiper/swiper-bundle.min.js`)
-  
+
 
 block mainContent
-  //- .cursor-inner 
+  //- .cursor-inner
   .cursor-outer.d-none.d-md-block
-  //- +Navbar(pageInfo)
+
   block content
-   
+
 block afterMainContent
-  //- +Footer(pageInfo)
+
 

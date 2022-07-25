@@ -4,9 +4,9 @@ mixin Hero
     +Section
       .row.align-items-center.py-5
         .col-lg-6.my-5.my-lg-0
-          h1.text-white.fw-normal.fs-4.fs-md-5.fs-xl-6.lh-base Save time by building fast with Boldo Template 
+          h1.text-white.fw-normal.fs-4.fs-md-5.fs-xl-6.lh-base Save time by building fast with Boldo Template
           p.text-white.py-3.fw-thin.pe-7 Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage innovator success deployment non-disclosure.
-          .btns 
+          .btns
             button.btn.btn-success.text-black.me-3.border-2.border-success.mb-3 Buy Template
             button.btn.btn-outlined.border-2.border-white.text-white.mb-3 Explore
         .col-lg-6.text-lg-end.position-relative.z-index-2
@@ -46,15 +46,13 @@ mixin Hero
               },
             })
             .swiper-wrapper
-              .swiper-slide 
-                img(src="assets/img/logos/boldo.png", alt="").w-100
-              .swiper-slide 
-                img(src="assets/img/logos/presto.png", alt="").w-100
-              .swiper-slide 
-                img(src="assets/img/logos/boldo.png", alt="").w-100
-              .swiper-slide 
-                img(src="assets/img/logos/presto.png", alt="").w-100
-              .swiper-slide 
-                img(src="assets/img/logos/boldo.png", alt="").w-100
-              .swiper-slide 
-                img(src="assets/img/logos/presto.png", alt="").w-100
+              +SwiperSlideImg("assets/img/logos/boldo.png")
+              +SwiperSlideImg("assets/img/logos/presto.png")
+              +SwiperSlideImg("assets/img/logos/boldo.png")
+              +SwiperSlideImg("assets/img/logos/presto.png")
+              +SwiperSlideImg("assets/img/logos/boldo.png")
+              +SwiperSlideImg("assets/img/logos/presto.png")
+
+mixin SwiperSlideImg(imgSrc)
+  .swiper-slide
+    img(src=imgSrc, alt="")

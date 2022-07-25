@@ -3,7 +3,7 @@
 -----------------------------------------------*/
 ::placeholder {
   opacity: 1;
-  color: var(--#{$variable-prefix}400);
+  color: var(--#{$black}100);
 }
 
 html {
@@ -75,7 +75,7 @@ samp {
   font-size: $font-size-sm;
 }
 
-code{
+code {
   font-size: 87.5%;
 }
 
@@ -83,5 +83,3 @@ ol,
 ul {
   padding-left: 2.5rem;
 }
-
-
