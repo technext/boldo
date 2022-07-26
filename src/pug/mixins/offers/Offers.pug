@@ -1,11 +1,11 @@
-mixin Offers 
-    +Section 
+mixin FirstOffer
+    +Section
         .row.align-items-center
             .col-xl-6
                 img(src=`assets/img/offer/1.png`, alt="").w-xl-75.w-100
             .col-xl-6
-                h1.fw-normal.fs-lg-4.fs-md-3.fs-xl-5.lh-base We connect our customers with the best, and help them keep up-and stay open.
-                ul.list-unstyled.my-5
+                h1.fw-normal.fs-xl-5.fs-lg-4.fs-md-3.lh-base We connect our customers with the best, and help them keep up-and stay open.
+                ul.list-unstyled.my-xl-5.my-3
                     each item in ["We connect our customers with the best.", "Advisor success customer launch party.", "Business-to-consumer long tail."]
                         li.list-group-item.list-style-none.fs-1.fs-lg-2.my-4.d-flex.align-items-center.gap-3.text-black
                             i(class="fa-solid fa-circle-check").fs-lg-4.fs-3.text-primary
@@ -14,7 +14,7 @@ mixin Offers
 
 
 //- second offer
-mixin SecondOffer   
+mixin SecondOffer
     .container.px-md-5.px-lg-9
         .row.align-items-center
             .col-xl-6
@@ -30,4 +30,4 @@ mixin SecondOffer
                         i(class="fa-solid fa-sun").fs-lg-4.fs-3
                         spam Business-to-consumer long tail.
             .col-xl-6.text-end
-                img(src=`assets/img/offer/2.png`, alt="").w-lg-75.w-100.mb-7
+                img(src=`assets/img/offer/2.png`, alt="").w-lg-75.w-100.mb-xl-7.mb-6

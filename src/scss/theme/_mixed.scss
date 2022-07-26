@@ -15,39 +15,6 @@
   letter-spacing: 1px;
 }
 
-// swiper
-.swiper-button-prev,
-.swiper-button-next {
-  @media screen and (max-width: 768px) {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-
-  background-color: #fff !important;
-  position: absolute;
-  top: 100px;
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 100%;
-  color: $black;
-
-  &::after {
-    display: none;
-  }
-}
-
-.swiper-button-prev {
-  @media screen and (max-width: 768px) {
-    left: calc(100% - 9rem);
-  }
-
-  left: calc(100% - 12rem);
-}
-
-.swiper-button-next {
-  right: 1rem;
-}
-
 // accordion
 .accordion-button {
 

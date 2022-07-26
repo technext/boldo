@@ -1,5 +1,5 @@
 mixin Reviews
-    - 
+    -
         var reviews = [
             {
                 description:"“Buyer buzz partner network disruptive non-disclosure agreement business”",
@@ -28,7 +28,9 @@ mixin Reviews
         ]
     #reviews.bg-primary
         +Section
-            h1.w-lg-50.w-md-75.fw-normal.text-white.lh-base.fs-lg-5.fs-md-4.fs-3 An enterprise template to ramp up your company website
+            h1.w-lg-75.w-md-75.fw-normal.text-white.lh-base.fs-xl-5.fs-lg-4.fs-md-3.fs-2 An enterprise template to ramp
+                br
+                | up your company website
             .swiper.mySwiper.mt-7
                 .swiper-container.swiper-theme(data-swiper!={
                     slidesPerView: 1,
@@ -66,8 +68,8 @@ mixin Reviews
                                 h3.primary-spacing.fw-normal.text-black.fs-2.lh-base= review.description
                                 .d-flex.align-items-center.gap-3.mt-5
                                     img(src=review.avatar, alt="profile")
-                                    .info.text-black 
-                                        p.m-0= review.name 
+                                    .info.text-black
+                                        p.m-0= review.name
                                         small= review.designation
                 .swiper-button-next
                     span.fas.fa-arrow-right.fs-lg-3.fs-2
