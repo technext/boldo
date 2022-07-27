@@ -20212,6 +20212,24 @@ ul {
   right: initial !important;
   top: -6rem !important;
 }
+@media only screen and (max-width: 768px) {
+  .bg-holder {
+    top: -10rem !important;
+    left: -8rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .bg-holder {
+    top: -12rem !important;
+    left: -6rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .bg-holder {
+    top: -20rem !important;
+    left: -4rem;
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                  Anchor JS                                 */

@@ -20235,6 +20235,24 @@ ul {
   left: initial !important;
   top: -6rem !important;
 }
+@media only screen and (max-width: 768px) {
+  .bg-holder {
+    top: -10rem !important;
+    right: -8rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .bg-holder {
+    top: -12rem !important;
+    right: -6rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .bg-holder {
+    top: -20rem !important;
+    right: -4rem;
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                  Anchor JS                                 */
