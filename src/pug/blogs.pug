@@ -1,14 +1,12 @@
 extends layouts/LayoutTheme
-include mixins/navbar/Navbar
-include mixins/blogHero/BlogHero
-include mixins/allblogs/AllBlogs
-include mixins/promo/Promo
-include mixins/footer/Footer
+include mixins/blog/BlogHero
+include mixins/blog/AllBlogs
 
 
 
 append variables
-  - 
+  - var darkNavbar = false;
+  -
     var pageInfo = {
       pageTitle: 'Blogs',
     }
@@ -19,9 +17,6 @@ append styles
 prepend scripts
 
 
-block content 
-  +Navbar(false,pageInfo.pageTitle)
+block content
   +BlogHero
   +AllBlogs
-  +Promo
-  +Footer

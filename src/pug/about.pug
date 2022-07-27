@@ -1,17 +1,14 @@
 extends layouts/LayoutTheme
-include mixins/navbar/Navbar
 include mixins/about/Hero
-include mixins/gallery/Gallery
-include mixins/numbers/Numbers
-include mixins/team/Team
-include mixins/values/Values
-include mixins/promo/Promo
-include mixins/footer/Footer
+include mixins/about/Gallery
+include mixins/about/Numbers
+include mixins/about/Team
+include mixins/about/Values
 
 
 
 append variables
-  - 
+  -
     var pageInfo = {
       pageTitle: 'About',
     }
@@ -22,12 +19,9 @@ append styles
 prepend scripts
 
 
-block content 
-  +Navbar(true, pageInfo.pageTitle)
+block content
   +Hero
   +Gallery
   +Numbers
   +Team
   +Values
-  +Promo
-  +Footer

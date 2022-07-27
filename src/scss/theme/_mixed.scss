@@ -1,3 +1,10 @@
+$assetPath: "/public/assets/img/hero/hero-bg.png";
+
+// minus padding
+.minus-margin {
+  margin-top: -5.65rem !important;
+}
+
 // hover
 .simple-hover {
   color: $black;
@@ -5,7 +12,7 @@
   transition-property: color, background-color;
 
   &:hover {
-    background-color: $primary;
+    background-color: $dark;
     color: white;
   }
 }
@@ -19,7 +26,7 @@
 .accordion-button {
 
   &::after {
-    background-color: $primary;
+    background-color: $dark;
     border-radius: 100%;
     width: 1.75rem !important;
     height: 1.75rem !important;
@@ -53,4 +60,27 @@
   h1 {
     font-size: 6rem;
   }
+}
+
+// bg-holder
+
+.bg-holder {
+  @media only screen and (max-width:768px) {
+    top: -10rem !important;
+    right: -8rem;
+  }
+
+  @media only screen and (max-width:580px) {
+    top: -12rem !important;
+    right: -6rem;
+  }
+
+  @media only screen and (max-width:500px) {
+    top: -20rem !important;
+    right: -4rem;
+  }
+
+  right: -14rem;
+  left: initial !important;
+  top: -6rem !important;
 }

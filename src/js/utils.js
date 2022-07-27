@@ -56,14 +56,14 @@ const rgbaColor = (color = '#fff', alpha = 0.5) =>
 /* --------------------------------- Colors --------------------------------- */
 
 const colors = {
-  primary: '#0A2640',
+  primary: '#5EDCD4',
   secondary: '#748194',
   success: '#00d27a',
   info: '#27bcfd',
   warning: '#f5803e',
   danger: '#e63757',
   light: '#f9fafd',
-  dark: '#000',
+  dark: '#0A2640',
 };
 
 const grays = {

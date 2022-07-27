@@ -14,14 +14,19 @@
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon-medium.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="undefinedassets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
 
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link href="vendors/prism/prism.css" rel="stylesheet">
     <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/css/theme.min.css" rel="stylesheet" />
@@ -33,64 +38,72 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
-      <div class="cursor-outer d-none d-md-block"></div>
-      <nav class="navbar navbar-expand-lg fixed-top w-100 py-4 navbar-dark" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container px-lg-9 px-md-5"><a class="navbar-brand" href="index.html"><img src="assets/img/Logo.png" alt="logo" /></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars text-white fs-3"></i></button>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/Logo.png" alt="logo" /></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars text-white fs-3"></i></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link mx-2 text-light" aria-current="page" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link mx-2 text-light active" aria-current="page" href="about.html">About</a></li>
-              <li class="nav-item"><a class="nav-link mx-2 text-light" aria-current="page" href="blogs.html">Blogs</a></li>
-              <li class="nav-item"><a class="nav-link btn bg-white px-4 text-black ms-2 w-md-25 w-50 w-lg-100" aria-current="page" href="#">Log In</a></li>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="blogs.html">Blogs</a></li>
+              <li class="nav-item"><a class="nav-link btn bg-white text-black w-md-25 w-50 w-lg-100" aria-current="page" href="#">Log In</a></li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="bg-primary text-center" id="about">
+      <div class="bg-dark text-center">
+
         <!-- ============================================-->
         <!-- <section> begin ============================-->
         <section>
-          <div class="container px-md-5 px-lg-9">
+          <div class="container">
             <p class="text-light pt-6 fs-1">About</p>
-            <h1 class="text-white fs-lg-7 fs-md-4 fs-3 fw-normal lh-base my-4">We love to make great<br />things, things that matter.</h1>
+            <h1 class="text-white fs-lg-7 fs-md-4 fs-3 lh-base my-4">We love to make great<br />things, things that matter.</h1>
             <p class="w-100 w-md-50 text-light mx-auto pb-7">Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage innovator success deployment non-disclosure.</p>
           </div><!-- end of .container-->
         </section><!-- <section> close ============================-->
         <!-- ============================================-->
 
       </div>
-      <div class="container px-lg-9 px-md-5">
-        <div class="gallery-wraper">
-          <div class="img-wraper"> <img src="assets/img/gallery/1.png" alt="" /></div>
-          <div class="img-wraper"> <img src="assets/img/gallery/2.png" alt="" /></div>
-          <div class="img-wraper"> <img src="assets/img/gallery/3.png" alt="" /></div>
-          <div class="img-wraper"> <img src="assets/img/gallery/4.png" alt="" /></div>
-          <div class="img-wraper"> <img src="assets/img/gallery/5.png" alt="" /></div>
-        </div>
-        <div class="px-xl-8 px-md-5 px-3 py-8">
-          <p class="fs-1">Our Story </p>
-          <h1 class="fs-lg-5 fs-3 fs-lg-6 my-4 fw-normal">Handshake infographic mass market crowdfunding iteration.</h1>
-          <p class="fs-1 lh-base">Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Traction stock user experience deployment beta innovator incubator focus. Sales user experience branding growth hacking holy grail monetization conversion prototype stock network effects. Learning curve network effects return on investment bootstrapping business-to-consumer. </p>
-        </div>
-      </div>
-      <div class="bg-primary" id="numbers">
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section>
+        <div class="container">
+          <div class="gallery-wraper">
+            <div class="img-wraper"><img src="assets/img/gallery/1.png" alt="" /></div>
+            <div class="img-wraper"><img src="assets/img/gallery/2.png" alt="" /></div>
+            <div class="img-wraper"><img src="assets/img/gallery/3.png" alt="" /></div>
+            <div class="img-wraper"><img src="assets/img/gallery/4.png" alt="" /></div>
+            <div class="img-wraper"><img src="assets/img/gallery/5.png" alt="" /></div>
+          </div>
+          <div class="px-xl-8 px-md-5 px-3 py-8">
+            <p class="fs-1">Our Story</p>
+            <h1 class="fs-lg-5 fs-3 fs-lg-6 my-4">Handshake infographic mass market crowdfunding iteration.</h1>
+            <p class="fs-1 lh-base">Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Traction stock user experience deployment beta innovator incubator focus. Sales user experience branding growth hacking holy grail monetization conversion prototype stock network effects. Learning curve network effects return on investment bootstrapping business-to-consumer.</p>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <div class="bg-dark">
+
         <!-- ============================================-->
         <!-- <section> begin ============================-->
-        <section>
-          <div class="container px-md-5 px-lg-9">
+        <section class="minus-margin">
+          <div class="container">
             <p class="text-center text-light">Our numbers</p>
-            <h1 class="text-center text-white w-lg-75 w-100 mx-auto fw-normal fs-xl-6 fs-lg-4 fs-3 lh-base">Handshake infographic mass market crowdfunding iteration.</h1>
+            <h1 class="text-center text-white w-lg-75 w-100 mx-auto fs-xl-6 fs-lg-4 fs-3 lh-base">Handshake infographic mass market crowdfunding iteration.</h1>
             <div class="row mt-5">
               <div class="col-xl-4 col-md-6 font-extra-learge">
-                <h1 class="fw-normal text-success">120M</h1>
+                <h1 class="text-success">120M</h1>
                 <p class="text-light fs-2">Cool feature title</p>
               </div>
               <div class="col-xl-4 col-md-6 font-extra-learge">
-                <h1 class="fw-normal text-success">10.000</h1>
+                <h1 class="text-success">10.000</h1>
                 <p class="text-light fs-2">Cool feature title</p>
               </div>
               <div class="col-xl-4 col-md-6 font-extra-learge">
-                <h1 class="fw-normal text-success">240</h1>
+                <h1 class="text-success">240</h1>
                 <p class="text-light fs-2">Cool feature title</p>
               </div>
             </div>
@@ -98,26 +111,28 @@
         </section><!-- <section> close ============================-->
         <!-- ============================================-->
 
-      </div><!-- ============================================-->
+      </div>
+
+      <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section>
-        <div class="container px-md-5 px-lg-9">
+        <div class="container">
           <div class="px-xl-8 px-md-5 px-3">
             <p class="text-gray fs-1">Our team</p>
-            <h1 class="text-black fs-lg-6 fs-md-4 fs-3 fw-normal my-4">The leadership team</h1>
-            <p class="text-gray fs-1 w-lg-75 w-100">Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Traction stock user experience deployment beta innovator incubator focus. </p>
+            <h1 class="text-black fs-lg-6 fs-md-4 fs-3 my-4">The leadership team</h1>
+            <p class="text-gray fs-1 w-lg-75 w-100">Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Traction stock user experience deployment beta innovator incubator focus.</p>
           </div>
           <div class="row mt-7">
-            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center text-sm-left"> <img class="img-fluid" src="assets/img/team/1.png" alt="" />
-              <h2 class="fw-normal fs-3 my-3">Michael Scott</h2>
+            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center text-sm-left"><img class="img-fluid" src="assets/img/team/1.png" alt="" />
+              <h2 class="fs-3 my-3">Michael Scott</h2>
               <p class="fs-1 m-0">General Manager</p>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center text-sm-left"> <img class="img-fluid" src="assets/img/team/2.png" alt="" />
-              <h2 class="fw-normal fs-3 my-3">Dwight Schrute</h2>
+            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center text-sm-left"><img class="img-fluid" src="assets/img/team/2.png" alt="" />
+              <h2 class="fs-3 my-3">Dwight Schrute</h2>
               <p class="fs-1 m-0">General Manager</p>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center text-sm-left"> <img class="img-fluid" src="assets/img/team/3.png" alt="" />
-              <h2 class="fw-normal fs-3 my-3">Pam Beetsley</h2>
+            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center text-sm-left"><img class="img-fluid" src="assets/img/team/3.png" alt="" />
+              <h2 class="fs-3 my-3">Pam Beetsley</h2>
               <p class="fs-1 m-0">General Manager</p>
             </div>
           </div>
@@ -125,33 +140,34 @@
       </section><!-- <section> close ============================-->
       <!-- ============================================-->
 
-      <div class="bg-primary" id="values">
+      <div class="bg-dark" id="values">
+
         <!-- ============================================-->
         <!-- <section> begin ============================-->
         <section>
-          <div class="container px-md-5 px-lg-9">
+          <div class="container">
             <div class="px-xl-8 px-md-5 px-3">
               <p class="text-light fs-1">Our values</p>
-              <h1 class="text-white fs-lg-6 fs-md-4 fs-3 my-lg-4 my-3 fw-normal">Things in we believe</h1>
-              <p class="text-light w-lg-75 w-100 fs-lg-1">Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Traction stock user experience deployment beta innovator incubator focus. </p>
-              <div class="d-sm-flex justify-content-between my-5 gap-3 gap-md-5 gap-xl-0">
-                <div class="w-sm-25 mb-3 mb-sm-0"> <img class="img-fluid" src="assets/img/values/1.png" alt="" /></div>
+              <h1 class="text-white fs-lg-6 fs-md-4 fs-3 my-lg-4 my-3">Things in we believe</h1>
+              <p class="text-light w-lg-75 w-100 fs-lg-1">Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Traction stock user experience deployment beta innovator incubator focus.</p>
+              <div class="d-sm-flex my-5 gap-3 gap-md-5 gap-xl-0">
+                <div class="w-sm-25 mb-3 mb-sm-0"><img class="img-fluid" src="assets/img/values/1.png" alt="" /></div>
                 <div class="w-sm-75">
-                  <h2 class="text-white fs-1 fs-lg-3 fw-normal mb-lg-3">We are commited.</h2>
+                  <h2 class="text-white fs-1 fs-lg-3 mb-lg-3">We are commited.</h2>
                   <p class="text-light fs-lg-1 lg-base">Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration.</p>
                 </div>
               </div>
-              <div class="d-sm-flex justify-content-between my-5 gap-3 gap-md-5 gap-xl-0">
-                <div class="w-sm-25 mb-3 mb-sm-0"> <img class="img-fluid" src="assets/img/values/2.png" alt="" /></div>
+              <div class="d-sm-flex my-5 gap-3 gap-md-5 gap-xl-0">
+                <div class="w-sm-25 mb-3 mb-sm-0"><img class="img-fluid" src="assets/img/values/2.png" alt="" /></div>
                 <div class="w-sm-75">
-                  <h2 class="text-white fs-1 fs-lg-3 fw-normal mb-lg-3">We are responsible.</h2>
+                  <h2 class="text-white fs-1 fs-lg-3 mb-lg-3">We are responsible.</h2>
                   <p class="text-light fs-lg-1 lg-base">Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration.</p>
                 </div>
               </div>
-              <div class="d-sm-flex justify-content-between my-5 gap-3 gap-md-5 gap-xl-0">
-                <div class="w-sm-25 mb-3 mb-sm-0"> <img class="img-fluid" src="assets/img/values/3.png" alt="" /></div>
+              <div class="d-sm-flex my-5 gap-3 gap-md-5 gap-xl-0">
+                <div class="w-sm-25 mb-3 mb-sm-0"><img class="img-fluid" src="assets/img/values/3.png" alt="" /></div>
                 <div class="w-sm-75">
-                  <h2 class="text-white fs-1 fs-lg-3 fw-normal mb-lg-3">We aim for progress.</h2>
+                  <h2 class="text-white fs-1 fs-lg-3 mb-lg-3">We aim for progress.</h2>
                   <p class="text-light fs-lg-1 lg-base">Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration.</p>
                 </div>
               </div>
@@ -160,57 +176,66 @@
         </section><!-- <section> close ============================-->
         <!-- ============================================-->
 
-      </div><!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section>
-        <div class="container px-md-5 px-lg-9">
-          <div class="overflow-hidded">
-            <div class="bg-primary p-5 rounded-1">
-              <h1 class="text-center w-lg-75 w-100 mx-auto fs-lg-6 fs-md-4 fs-3 fs-md-4 fw-normal text-white mt-3 lh-base mb-5">An enterprise template to ramp up your company website</h1>
-              <div class="d-md-flex align-items center justify-content-center gap-3 my-4"><input class="w-100 w-md-50 rounded-pill border-0 form-control text-black mb-3 mb-md-0 px-4" type="email" placeholder="Your email address" /><button class="btn btn-success text-black px-5">Start now</button></div>
-            </div>
-          </div>
-        </div><!-- end of .container-->
-      </section><!-- <section> close ============================-->
-      <!-- ============================================-->
-
-      <div id="footer">
-        <div class="container px-md-5 px-lg-9 py-5">
-          <div class="row">
-            <div class="col-lg-6 col-md-4"><a href="index.html"><img src="assets/img/black-logo.png" alt="" /></a>
-              <p class="my-4 w-75 lh-base primary-spacing text-gray">Social media validation business model canvas graphical user interface launch party creative facebook iPad twitter.</p>
-            </div>
-            <div class="col-lg-2 col-md-4">
-              <h3 class="fw-bold fs-1">Landings</h3>
-              <ul class="list-unstyled mt-5">
-                <li class="my-3 col-md-4"><a href="#">Home</a></li>
-                <li class="my-3"><a href="#">Products</a></li>
-                <li class="my-3"><a href="#">Services</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-md-4">
-              <h3 class="fw-bold fs-1">Landings</h3>
-              <ul class="list-unstyled mt-5">
-                <li class="my-3"><a href="#">Home</a></li>
-                <li class="my-3"><a href="#">Careers</a><span class="py-1 px-3 rounded-2 bg-success fw-bold text-black ms-2">Hiring!</span></li>
-                <li class="my-3"><a href="#">Services</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-md-4">
-              <h3 class="fw-bold fs-1">Landings</h3>
-              <ul class="list-unstyled mt-5">
-                <li class="my-3"><a href="#">Home</a></li>
-                <li class="my-3"><a href="#">Products</a></li>
-                <li class="my-3"><a href="#">Services</a></li>
-              </ul>
-            </div>
-          </div>
-          <p class="text-gray mt-2 mb-5">All rights reserved.</p>
-        </div>
       </div>
     </main><!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section>
+      <div class="container bg-dark overflow-hidden">
+        <div class="bg-holder" style="background-image:url(assets/img/promo/promo-bg.png);"></div>
+        <!--/.bg-holder-->
+        <div class="px-5 py-6 rounded-1 position-relative">
+          <h1 class="text-center w-lg-75 w-100 mx-auto fs-lg-6 fs-md-4 fs-3 text-white lh-base mb-5">An enterprise template to ramp up your company website</h1>
+          <div class="d-md-flex align-items center justify-content-center gap-3 my-4"><input class="w-100 w-md-50 rounded-pill border-0 form-control text-dark mb-3 mb-md-0 px-4 fs-1" type="email" placeholder="Your email address" /><button class="btn btn-success text-dark px-5 fs-1">Start now</button></div>
+        </div>
+      </div><!-- end of .container-->
+    </section><!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-4"><a href="index.html"><img src="assets/img/black-logo.png" alt="" /></a>
+            <p class="my-4 w-75 lh-base primary-spacing text-gray">Social media validation business model canvas graphical user interface launch party creative facebook iPad twitter.</p>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h3 class="fw-bold fs-1">Landings</h3>
+            <ul class="list-unstyled mt-5">
+              <li class="my-3 col-md-4"><a href="#">Home</a></li>
+              <li class="my-3"><a href="#">Products</a></li>
+              <li class="my-3"><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h3 class="fw-bold fs-1">Landings</h3>
+            <ul class="list-unstyled mt-5">
+              <li class="my-3"><a href="#">Home</a></li>
+              <li class="my-3"><a href="#">Careers</a><span class="py-1 px-2 rounded-2 bg-success fw-bold text-dark ms-2">Hiring!</span></li>
+              <li class="my-3"><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h3 class="fw-bold fs-1">Landings</h3>
+            <ul class="list-unstyled mt-5">
+              <li class="my-3"><a href="#">Home</a></li>
+              <li class="my-3"><a href="#">Products</a></li>
+              <li class="my-3"><a href="#">Services</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-gray mt-2 mb-5">All rights reserved.</p>
+      </div><!-- end of .container-->
+    </section><!-- <section> close ============================-->
+    <!-- ============================================-->
 
 
 

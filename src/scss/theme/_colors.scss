@@ -13,7 +13,7 @@ $gray-700: #5B7075 !default;
 $gray-800: #536468 !default;
 $gray-900: #445356 !default;
 $gray-1000: #384345 !default;
-$gray-1100: #313839 !default;
+$gray-1100: #0A2640 !default;
 $black: #000000 !default;
 $footer-black: #1B1B1B !default;
 
@@ -49,9 +49,9 @@ $pink: #D032D0 !default;
 $red: #D65025 !default;
 $orange: #F59300 !default;
 $yellow: #D7AE20 !default;
-$green: #69E6A6 !default;
+$green: #65E4A3 !default;
 $teal: #20c997 !default;
-$cyan: #0A2640 !default;
+$cyan: #5EDCD4 !default;
 
 //*-----------------------------------------------
 //|   Theme Colors
@@ -134,7 +134,6 @@ $theme-dark-colors: (
   'warning': $warning,
   'danger': $danger,
   'light': rgba(map-get($dark-grays, '200'), 0.25),
-  //TODO
   'dark': $light,
 );
 

@@ -33,7 +33,7 @@ const navbarInit = () => {
     const allColors = { ...utils.colors, ...utils.grays };
 
     const name = utils.getData(navbar, DataKey.NAVBAR_ON_SCROLL);
-    const colorName = Object.keys(allColors).includes(name) ? name : "primary";
+    const colorName = Object.keys(allColors).includes(name) ? name : "dark";
     const color = allColors[colorName];
     const bgClassName = `bg-${colorName}`;
     const shadowName = "shadow-transition";

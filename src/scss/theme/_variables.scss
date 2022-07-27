@@ -12,7 +12,7 @@ $container-max-widths: map-merge((sm: 576px,
       md: 768px,
       lg: 992px,
       xl: 1200px,
-      xxl: 1480px,
+      xxl: 1200px,
     ),
     $container-max-widths
 );
@@ -22,7 +22,7 @@ $grid-breakpoints: (
 $grid-breakpoints: map-merge((xs: 0,
       sm: 540px,
       md: 720px,
-      lg: 960px,
+      lg: 992px,
       xl: 1140px,
       xxl: 1440px,
     ),
@@ -102,7 +102,7 @@ $spacers: (
 $spacers: map-merge((0: 0,
       1: $spacer * 0.25,
       2: $spacer * 0.5,
-      3: $spacer,
+      3: $spacer * 2,
       4: $spacer * 1.8,
       5: $spacer * 3,
       6: $spacer * 4,
@@ -195,23 +195,6 @@ $headings-font-family: $font-family-sans-serif  !default;
 $headings-font-weight: $font-weight-bold  !default;
 $headings-color: var(--#{$variable-prefix}headings-color) !default;
 
-// scss-docs-start display-headings
-// $display-font-sizes: () !default;
-// $display-font-sizes: map-merge(
-//   (
-//     1: map_get($font-sizes, 8),
-//     2: map_get($font-sizes, 7),
-//     3: map_get($font-sizes, 6),
-//     4: map_get($font-sizes, 5),
-//     5: map_get($font-sizes, 4),
-//     6: map_get($font-sizes, 3),
-//   ),
-//   $display-font-sizes
-// );
-
-// $display-font-weight: $font-weight-black !default;
-// $display-line-height: 1 !default;
-// scss-docs-end display-headings
 
 $lead-font-size: $font-size-lg  !default;
 $lead-font-weight: $font-weight-normal  !default;
@@ -310,6 +293,11 @@ $zindex-sticky: 1015 !default;
 //*-----------------------------------------------
 //|   Navigation
 //-----------------------------------------------*/
+$navbar-nav-link-padding-x: 1.5rem !default;
+$navbar-padding-y: $spacer * 2 !default;
+$navbar-dark-color: $white  !default;
+$navbar-light-color: $white  !default;
+
 $navbar-dark-color: var(--#{$variable-prefix}navbar-dark-color) !default;
 $navbar-dark-hover-color: var(--#{$variable-prefix}navbar-dark-hover-color) !default;
 $navbar-dark-active-color: var(--#{$variable-prefix}navbar-dark-active-color) !default;
@@ -539,23 +527,6 @@ $sizes: map-merge((25: 25%,
     ),
     $sizes
 );
-
-
-
-//*-----------------------------------------------
-//|   Fancynav
-//-----------------------------------------------*/
-// $fancynav-width: 4.375rem !default;
-// $fancynav-breakpoint-up: lg !default;
-// $fancynav-breakpoint-down: md !default;
-// $fancynavHeight: 3rem !default;
-// $fancynav-collapse-bg: $black !default;
-// $fancynav-link-color: $white !default;
-
-//*-----------------------------------------------
-//|   offcanvas
-//-----------------------------------------------*/
-// $offcanvas-transition-duration:  .7s;
 
 //*-----------------------------------------------
 //|   Accordion

@@ -14,14 +14,19 @@
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon-medium.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="undefinedassets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
 
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link href="vendors/prism/prism.css" rel="stylesheet">
     <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/css/theme.min.css" rel="stylesheet" />
@@ -33,31 +38,30 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
-      <div class="cursor-outer d-none d-md-block"></div>
-      <nav class="navbar navbar-expand-lg fixed-top w-100 py-4 navbar-dark" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container px-lg-9 px-md-5"><a class="navbar-brand" href="index.html"><img src="assets/img/Logo.png" alt="logo" /></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars text-white fs-3"></i></button>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/Logo.png" alt="logo" /></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars text-white fs-3"></i></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link mx-2 text-light active" aria-current="page" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link mx-2 text-light" aria-current="page" href="about.html">About</a></li>
-              <li class="nav-item"><a class="nav-link mx-2 text-light" aria-current="page" href="blogs.html">Blogs</a></li>
-              <li class="nav-item"><a class="nav-link btn bg-white px-4 text-black ms-2 w-md-25 w-50 w-lg-100" aria-current="page" href="#">Log In</a></li>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="blogs.html">Blogs</a></li>
+              <li class="nav-item"><a class="nav-link btn bg-white text-black w-md-25 w-50 w-lg-100" aria-current="page" href="#">Log In</a></li>
             </ul>
           </div>
         </div>
       </nav><img class="position-absolute end-0 top-0 z-index-n2" src="assets/img/hero/hero-bg.png" alt="" />
-      <div class="bg-primary pb-n1" id="hero">
+      <div class="bg-dark">
+
         <!-- ============================================-->
         <!-- <section> begin ============================-->
         <section>
-          <div class="container px-md-5 px-lg-9">
+          <div class="container">
             <div class="row align-items-center py-5">
               <div class="col-lg-6 my-xl-5 my-lg-4 my-lg-0">
-                <h1 class="text-white fw-normal fs-3 fs-lg-4 fs-xl-6 lh-base">Save time by building fast with Boldo Template</h1>
-                <p class="text-white py-3 fw-thin pe-7">Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage innovator success deployment non-disclosure.</p>
-                <div class="btns"><button class="btn btn-success text-black me-3 border-2 border-success mb-3">Buy Template</button><button class="btn btn-outlined border-2 border-white text-white mb-3">Explore</button></div>
+                <h1 class="text-white fs-3 fs-lg-4 fs-xl-6 lh-base">Save time by building fast with Boldo Template</h1>
+                <p class="text-white py-lg-3 py-2">Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage innovator success deployment non-disclosure.</p><button class="btn btn-success text-black me-3 border-2 border-success mb-3">Buy Template</button><button class="btn btn-outlined border-2 border-white text-white mb-3">Explore</button>
               </div>
-              <div class="col-lg-6 text-lg-end position-relative z-index-2"><img class="w-100 w-xl-75" src="assets/img/hero/hero-graphics.png" alt="" /></div>
+              <div class="col-lg-6 text-lg-end"><img class="img-fluid" src="assets/img/hero/hero-graphics.png" alt="" /></div>
             </div>
             <div class="swiper mySwiper mt-4">
               <div class="swiper-container swiper-shadow swiper-theme" data-swiper='{"slidesPerView":2,"breakpoints":{"640":{"slidesPerView":2,"spaceBetween":20},"768":{"slidesPerView":4,"spaceBetween":40},"992":{"slidesPerView":5,"spaceBetween":40},"1024":{"slidesPerView":4,"spaceBetween":50},"1025":{"slidesPerView":6,"spaceBetween":50}},"spaceBetween":10,"grabCursor":true,"pagination":{"el":".swiper-pagination","clickable":true},"loop":true,"freeMode":true,"autoplay":{"delay":2500,"disableOnInteraction":false}}'>
@@ -77,22 +81,23 @@
 
       </div>
       <div id="services">
+
         <!-- ============================================-->
         <!-- <section> begin ============================-->
         <section>
-          <div class="container px-md-5 px-lg-9">
+          <div class="container">
             <p class="text-center fs-1">Our Services</p>
-            <h2 class="mx-auto text-center fs-lg-6 fs-md-5 fw-normal w-lg-75">Handshake infographic mass market crowdfunding iteration.</h2>
+            <h2 class="mx-auto text-center fs-lg-6 fs-md-5 w-lg-75">Handshake infographic mass market crowdfunding iteration.</h2>
             <div class="row mt-7 gx-xl-7 gy-5 gy-md-0">
-              <div class="col-md-4"><img class="img-fluid w-100" src="assets/img/services/1.png" alt="" />
+              <div class="col-md-4"><img class="w-100" src="assets/img/services/1.png" alt="" />
                 <h3 class="fw-normal fs-2 mt-4 mb-3">Cool feature title</h3>
                 <p class="fs-lg-1 fw-thin">Learning curve network effects return on investment.</p><a class="text-black fs-lg-1 pb-2 border-black border-bottom text-decoration-none" href="">Explore page<i class="fa-solid fa-arrow-right ms-2"></i></a>
               </div>
-              <div class="col-md-4"><img class="img-fluid w-100" src="assets/img/services/2.png" alt="" />
+              <div class="col-md-4"><img class="w-100" src="assets/img/services/2.png" alt="" />
                 <h3 class="fw-normal fs-2 mt-4 mb-3">Even cooler feature</h3>
                 <p class="fs-lg-1 fw-thin">Learning curve network effects return on investment.</p><a class="text-black fs-lg-1 pb-2 border-black border-bottom text-decoration-none" href="">Explore page<i class="fa-solid fa-arrow-right ms-2"></i></a>
               </div>
-              <div class="col-md-4"><img class="img-fluid w-100" src="assets/img/services/3.png" alt="" />
+              <div class="col-md-4"><img class="w-100" src="assets/img/services/3.png" alt="" />
                 <h3 class="fw-normal fs-2 mt-4 mb-3">Cool feature title</h3>
                 <p class="fs-lg-1 fw-thin">Learning curve network effects return on investment.</p><a class="text-black fs-lg-1 pb-2 border-black border-bottom text-decoration-none" href="">Explore page<i class="fa-solid fa-arrow-right ms-2"></i></a>
               </div>
@@ -101,61 +106,72 @@
         </section><!-- <section> close ============================-->
         <!-- ============================================-->
 
-      </div><!-- ============================================-->
+      </div>
+
+      <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section>
-        <div class="container px-md-5 px-lg-9">
+        <div class="container">
           <div class="row align-items-center">
-            <div class="col-xl-6"><img class="w-xl-75 w-100" src="assets/img/offer/1.png" alt="" /></div>
-            <div class="col-xl-6">
+            <div class="col-lg-6"><img class="img-fluid" src="assets/img/offer/1.png" alt="" /></div>
+            <div class="col-lg-6">
               <h1 class="fw-normal fs-xl-5 fs-lg-4 fs-md-3 lh-base">We connect our customers with the best, and help them keep up-and stay open.</h1>
               <ul class="list-unstyled my-xl-5 my-3">
-                <li class="list-group-item list-style-none fs-1 fs-lg-2 my-4 d-flex align-items-center gap-3 text-black"><i class="fa-solid fa-circle-check fs-lg-4 fs-3 text-primary"></i>
+                <li class="list-group-item list-style-none fs-1 fs-lg-2 my-4 d-flex align-items-center gap-3 text-black"><i class="fa-solid fa-circle-check fs-lg-4 fs-3 text-dark"></i>
                   <spam>We connect our customers with the best.</spam>
                 </li>
-                <li class="list-group-item list-style-none fs-1 fs-lg-2 my-4 d-flex align-items-center gap-3 text-black"><i class="fa-solid fa-circle-check fs-lg-4 fs-3 text-primary"></i>
+                <li class="list-group-item list-style-none fs-1 fs-lg-2 my-4 d-flex align-items-center gap-3 text-black"><i class="fa-solid fa-circle-check fs-lg-4 fs-3 text-dark"></i>
                   <spam>Advisor success customer launch party.</spam>
                 </li>
-                <li class="list-group-item list-style-none fs-1 fs-lg-2 my-4 d-flex align-items-center gap-3 text-black"><i class="fa-solid fa-circle-check fs-lg-4 fs-3 text-primary"></i>
+                <li class="list-group-item list-style-none fs-1 fs-lg-2 my-4 d-flex align-items-center gap-3 text-black"><i class="fa-solid fa-circle-check fs-lg-4 fs-3 text-dark"></i>
                   <spam>Business-to-consumer long tail.</spam>
                 </li>
-              </ul><button class="btn btn-primary py-3 mb-5 mt-2">Start now</button>
+              </ul><button class="btn btn-dark mb-5 mt-2">Start now</button>
             </div>
           </div>
         </div><!-- end of .container-->
       </section><!-- <section> close ============================-->
       <!-- ============================================-->
 
-      <div class="container px-md-5 px-lg-9">
-        <div class="row align-items-center">
-          <div class="col-xl-6">
-            <h1 class="fw-normal fs-lg-4 fs-md-3 fs-xl-5 lh-base">We connect our customers with the best, and help them keep up-and stay open.</h1>
-            <ul class="list-unstyled my-5">
-              <li class="list-group-item list-style-none fs-1 fs-lg-2 my-4 d-flex align-items-center gap-3 shadow-sm py-4 px-3 simple-hover rounded-1"><i class="fa-solid fa-leaf fs-lg-4 fs-3"></i>
-                <spam>We connect our customers with the best.</spam>
-              </li>
-              <li class="list-group-item list-style-none fs-1 fs-lg-2 my-4 d-flex align-items-center gap-3 shadow-sm py-4 px-3 simple-hover rounded-1"><i class="fa-solid fa-eye fs-lg-4 fs-3"></i>
-                <spam>Advisor success customer launch party.</spam>
-              </li>
-              <li class="list-group-item list-style-none fs-1 fs-lg-2 my-4 d-flex align-items-center gap-3 shadow-sm py-4 px-3 simple-hover rounded-1"><i class="fa-solid fa-sun fs-lg-4 fs-3"></i>
-                <spam>Business-to-consumer long tail.</spam>
-              </li>
-            </ul>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="minus-margin ">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h1 class="fw-normal fs-lg-4 fs-md-3 fs-xl-5 lh-base">We connect our customers with the best, and help them keep up-and stay open.</h1>
+              <ul class="list-unstyled my-5">
+                <li class="list-group-item list-style-none fs-1 fs-lg-2 my-4 d-flex align-items-center gap-3 shadow-sm py-4 px-3 simple-hover rounded-1"><i class="fa-solid fa-leaf fs-lg-4 fs-3"></i>
+                  <spam>We connect our customers with the best.</spam>
+                </li>
+                <li class="list-group-item list-style-none fs-1 fs-lg-2 my-4 d-flex align-items-center gap-3 shadow-sm py-4 px-3 simple-hover rounded-1"><i class="fa-solid fa-eye fs-lg-4 fs-3"></i>
+                  <spam>Advisor success customer launch party.</spam>
+                </li>
+                <li class="list-group-item list-style-none fs-1 fs-lg-2 my-4 d-flex align-items-center gap-3 shadow-sm py-4 px-3 simple-hover rounded-1"><i class="fa-solid fa-sun fs-lg-4 fs-3"></i>
+                  <spam>Business-to-consumer long tail.</spam>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 text-start text-lg-end mb-8"><img class="img-fluid" src="assets/img/offer/2.png" alt="" /></div>
           </div>
-          <div class="col-xl-6 text-end"><img class="w-lg-75 w-100 mb-xl-7 mb-6" src="assets/img/offer/2.png" alt="" /></div>
-        </div>
-      </div>
-      <div class="bg-primary" id="reviews">
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <div class="bg-dark">
+
         <!-- ============================================-->
         <!-- <section> begin ============================-->
-        <section>
-          <div class="container px-md-5 px-lg-9">
-            <h1 class="w-lg-75 w-md-75 fw-normal text-white lh-base fs-xl-5 fs-lg-4 fs-md-3 fs-2">An enterprise template to ramp<br />up your company website</h1>
+        <section class="minus-margin">
+          <div class="container">
+            <h1 class="w-lg-75 w-md-75 text-white lh-base fs-xl-5 fs-lg-4 fs-md-3 fs-2">An enterprise template to ramp<br />up your company website</h1>
             <div class="swiper mySwiper mt-7">
               <div class="swiper-container swiper-theme" data-swiper='{"slidesPerView":1,"breakpoints":{"640":{"slidesPerView":1,"spaceBetween":10},"768":{"slidesPerView":2,"spaceBetween":20},"1025":{"slidesPerView":3,"spaceBetween":30}},"spaceBetween":10,"grabCursor":true,"pagination":{"el":".swiper-pagination","clickable":true},"navigation":{"nextEl":".swiper-button-next","prevEl":".swiper-button-prev"},"loop":true,"freeMode":true,"loopedSlides":3}'>
                 <div class="swiper-wrapper">
                   <div class="swiper-slide bg-white p-5 rounded-1">
-                    <h3 class="primary-spacing fw-normal text-black fs-2 lh-base">“Buyer buzz partner network disruptive non-disclosure agreement business”</h3>
+                    <h3 class="primary-spacing text-black fs-2 lh-base">“Buyer buzz partner network disruptive non-disclosure agreement business”</h3>
                     <div class="d-flex align-items-center gap-3 mt-5"><img src="assets/img/review/1.png" alt="profile" />
                       <div class="info text-black">
                         <p class="m-0">Albus Dumbledore</p><small>Manager @ Howarts</small>
@@ -163,7 +179,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide bg-white p-5 rounded-1">
-                    <h3 class="primary-spacing fw-normal text-black fs-2 lh-base">“Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor.”</h3>
+                    <h3 class="primary-spacing text-black fs-2 lh-base">“Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor.”</h3>
                     <div class="d-flex align-items-center gap-3 mt-5"><img src="assets/img/review/2.png" alt="profile" />
                       <div class="info text-black">
                         <p class="m-0">Severus Snape</p><small>Manager @ Slytherin</small>
@@ -171,7 +187,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide bg-white p-5 rounded-1">
-                    <h3 class="primary-spacing fw-normal text-black fs-2 lh-base">“Release facebook responsive web design business model canvas seed money monetization.”</h3>
+                    <h3 class="primary-spacing text-black fs-2 lh-base">“Release facebook responsive web design business model canvas seed money monetization.”</h3>
                     <div class="d-flex align-items-center gap-3 mt-5"><img src="assets/img/review/3.png" alt="profile" />
                       <div class="info text-black">
                         <p class="m-0">Harry Potter</p><small>Team Leader @ Gryffindor</small>
@@ -179,7 +195,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide bg-white p-5 rounded-1">
-                    <h3 class="primary-spacing fw-normal text-black fs-2 lh-base">“Buyer buzz partner network disruptive non-disclosure agreement business”</h3>
+                    <h3 class="primary-spacing text-black fs-2 lh-base">“Buyer buzz partner network disruptive non-disclosure agreement business”</h3>
                     <div class="d-flex align-items-center gap-3 mt-5"><img src="assets/img/review/1.png" alt="profile" />
                       <div class="info text-black">
                         <p class="m-0">Albus Dumbledore</p><small>Manager @ Howarts</small>
@@ -195,13 +211,15 @@
         </section><!-- <section> close ============================-->
         <!-- ============================================-->
 
-      </div><!-- ============================================-->
+      </div>
+
+      <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section>
-        <div class="container px-md-5 px-lg-9"><img class="w-100" src="assets/img/offer/3.png" alt="" />
+        <div class="container"><img class="w-100" src="assets/img/offer/3.png" alt="" />
           <div class="row mt-5">
             <div class="col-md-6">
-              <h2 class="fw-normal fs-lg-5 fs-3 fs-md-4 lh-base">We connect our customers with the best, and help them keep up-and stay open.</h2>
+              <h2 class="fs-lg-5 fs-3 fs-md-4 lh-base">We connect our customers with the best, and help them keep up-and stay open.</h2>
             </div>
             <div class="col-md-6">
               <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -231,94 +249,110 @@
       <!-- ============================================-->
 
       <div id="services">
-        <div class="container px-md-5 px-lg-9">
-          <p class="text-center text-gray fs-1">Our Blog</p>
-          <h2 class="mx-auto text-center fs-lg-6 fs-md-5 fw-normal w-lg-75">Value proposition accelerator product management venture</h2>
-          <div class="row mt-7 gx-xl-7 gy-5 gy-md-0">
-            <div class="col-lg-4 col-md-6"><img class="img-fluid w-100" src="assets/img/blog/1.png" alt="" />
-              <div class="d-flex align-items-center gap-3 my-xl-4 py-lg-3 py-2">
-                <p class="fw-bold fs-small m-0 text-black">Category</p>
-                <p class="m-0">November 22, 2021</p>
-              </div>
-              <h3 class="fw-normal fs-1 lh-base">Pitch termsheet backing validation focus release.</h3>
-              <div class="d-flex align-items-center gap-2 my-4"><img src="assets/img/blog/profile1.png" alt="profile" />
-                <p class="m-0">Chandler Bing</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6"><img class="img-fluid w-100" src="assets/img/blog/2.png" alt="" />
-              <div class="d-flex align-items-center gap-3 my-xl-4 py-lg-3 py-2">
-                <p class="fw-bold fs-small m-0 text-black">Category</p>
-                <p class="m-0">November 22, 2021</p>
-              </div>
-              <h3 class="fw-normal fs-1 lh-base">Seed round direct mailing non-disclosure agreement graphical user interface rockstar.</h3>
-              <div class="d-flex align-items-center gap-2 my-4"><img src="assets/img/blog/profile2.png" alt="profile" />
-                <p class="m-0">Rachel Green</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6"><img class="img-fluid w-100" src="assets/img/blog/3.png" alt="" />
-              <div class="d-flex align-items-center gap-3 my-xl-4 py-lg-3 py-2">
-                <p class="fw-bold fs-small m-0 text-black">Category</p>
-                <p class="m-0">November 22, 2021</p>
-              </div>
-              <h3 class="fw-normal fs-1 lh-base">Beta prototype sales iPad gen-z marketing network effects value proposition</h3>
-              <div class="d-flex align-items-center gap-2 my-4"><img src="assets/img/blog/profile3.png" alt="profile" />
-                <p class="m-0">Monica Geller</p>
-              </div>
-            </div>
-          </div>
-          <div class="text-center mt-5"><button class="btn btn-outlined border-2 border-primary text-primary fs-1">Load More</button></div>
-        </div>
-      </div><!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section>
-        <div class="container px-md-5 px-lg-9">
-          <div class="overflow-hidded">
-            <div class="bg-primary p-5 rounded-1">
-              <h1 class="text-center w-lg-75 w-100 mx-auto fs-lg-6 fs-md-4 fs-3 fs-md-4 fw-normal text-white mt-3 lh-base mb-5">An enterprise template to ramp up your company website</h1>
-              <div class="d-md-flex align-items center justify-content-center gap-3 my-4"><input class="w-100 w-md-50 rounded-pill border-0 form-control text-black mb-3 mb-md-0 px-4" type="email" placeholder="Your email address" /><button class="btn btn-success text-black px-5">Start now</button></div>
-            </div>
-          </div>
-        </div><!-- end of .container-->
-      </section><!-- <section> close ============================-->
-      <!-- ============================================-->
 
-      <div id="footer">
-        <div class="container px-md-5 px-lg-9 py-5">
-          <div class="row">
-            <div class="col-lg-6 col-md-4"><a href="index.html"><img src="assets/img/black-logo.png" alt="" /></a>
-              <p class="my-4 w-75 lh-base primary-spacing text-gray">Social media validation business model canvas graphical user interface launch party creative facebook iPad twitter.</p>
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section>
+          <div class="container">
+            <p class="text-center text-gray fs-1">Our Blog</p>
+            <h2 class="mx-auto text-center fs-lg-6 fs-md-5 w-lg-75">Value proposition accelerator product management venture</h2>
+            <div class="row mt-7 gx-xl-7 gy-5 gy-md-0">
+              <div class="col-lg-4 col-md-6"><img class="w-100" src="assets/img/blog/1.png" alt="" />
+                <div class="d-flex align-items-center gap-3 my-lg-4 my-3">
+                  <p class="fw-bold fs-small m-0 text-black">Category</p>
+                  <p class="m-0">November 22, 2021</p>
+                </div>
+                <h3 class="fs-1 lh-base">Pitch termsheet backing validation focus release.</h3>
+                <div class="d-flex align-items-center gap-2 my-4"><img src="assets/img/blog/profile1.png" alt="profile" />
+                  <p class="m-0">Chandler Bing</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6"><img class="w-100" src="assets/img/blog/2.png" alt="" />
+                <div class="d-flex align-items-center gap-3 my-lg-4 my-3">
+                  <p class="fw-bold fs-small m-0 text-black">Category</p>
+                  <p class="m-0">November 22, 2021</p>
+                </div>
+                <h3 class="fs-1 lh-base">Seed round direct mailing non-disclosure agreement graphical user interface rockstar.</h3>
+                <div class="d-flex align-items-center gap-2 my-4"><img src="assets/img/blog/profile2.png" alt="profile" />
+                  <p class="m-0">Rachel Green</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6"><img class="w-100" src="assets/img/blog/3.png" alt="" />
+                <div class="d-flex align-items-center gap-3 my-lg-4 my-3">
+                  <p class="fw-bold fs-small m-0 text-black">Category</p>
+                  <p class="m-0">November 22, 2021</p>
+                </div>
+                <h3 class="fs-1 lh-base">Beta prototype sales iPad gen-z marketing network effects value proposition</h3>
+                <div class="d-flex align-items-center gap-2 my-4"><img src="assets/img/blog/profile3.png" alt="profile" />
+                  <p class="m-0">Monica Geller</p>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-2 col-md-4">
-              <h3 class="fw-bold fs-1">Landings</h3>
-              <ul class="list-unstyled mt-5">
-                <li class="my-3 col-md-4"><a href="#">Home</a></li>
-                <li class="my-3"><a href="#">Products</a></li>
-                <li class="my-3"><a href="#">Services</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-md-4">
-              <h3 class="fw-bold fs-1">Landings</h3>
-              <ul class="list-unstyled mt-5">
-                <li class="my-3"><a href="#">Home</a></li>
-                <li class="my-3"><a href="#">Careers</a><span class="py-1 px-3 rounded-2 bg-success fw-bold text-black ms-2">Hiring!</span></li>
-                <li class="my-3"><a href="#">Services</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-md-4">
-              <h3 class="fw-bold fs-1">Landings</h3>
-              <ul class="list-unstyled mt-5">
-                <li class="my-3"><a href="#">Home</a></li>
-                <li class="my-3"><a href="#">Products</a></li>
-                <li class="my-3"><a href="#">Services</a></li>
-              </ul>
-            </div>
-          </div>
-          <p class="text-gray mt-2 mb-5">All rights reserved.</p>
-        </div>
+            <div class="text-center mt-5"><button class="btn btn-outlined border-2 border-dark text-dark fs-1">Load More</button></div>
+          </div><!-- end of .container-->
+        </section><!-- <section> close ============================-->
+        <!-- ============================================-->
+
       </div>
     </main><!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section>
+      <div class="container bg-dark overflow-hidden">
+        <div class="bg-holder" style="background-image:url(assets/img/promo/promo-bg.png);"></div>
+        <!--/.bg-holder-->
+        <div class="px-5 py-6 rounded-1 position-relative">
+          <h1 class="text-center w-lg-75 w-100 mx-auto fs-lg-6 fs-md-4 fs-3 text-white lh-base mb-5">An enterprise template to ramp up your company website</h1>
+          <div class="d-md-flex align-items center justify-content-center gap-3 my-4"><input class="w-100 w-md-50 rounded-pill border-0 form-control text-dark mb-3 mb-md-0 px-4 fs-1" type="email" placeholder="Your email address" /><button class="btn btn-success text-dark px-5 fs-1">Start now</button></div>
+        </div>
+      </div><!-- end of .container-->
+    </section><!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-4"><a href="index.html"><img src="assets/img/black-logo.png" alt="" /></a>
+            <p class="my-4 w-75 lh-base primary-spacing text-gray">Social media validation business model canvas graphical user interface launch party creative facebook iPad twitter.</p>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h3 class="fw-bold fs-1">Landings</h3>
+            <ul class="list-unstyled mt-5">
+              <li class="my-3 col-md-4"><a href="#">Home</a></li>
+              <li class="my-3"><a href="#">Products</a></li>
+              <li class="my-3"><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h3 class="fw-bold fs-1">Landings</h3>
+            <ul class="list-unstyled mt-5">
+              <li class="my-3"><a href="#">Home</a></li>
+              <li class="my-3"><a href="#">Careers</a><span class="py-1 px-2 rounded-2 bg-success fw-bold text-dark ms-2">Hiring!</span></li>
+              <li class="my-3"><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h3 class="fw-bold fs-1">Landings</h3>
+            <ul class="list-unstyled mt-5">
+              <li class="my-3"><a href="#">Home</a></li>
+              <li class="my-3"><a href="#">Products</a></li>
+              <li class="my-3"><a href="#">Services</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-gray mt-2 mb-5">All rights reserved.</p>
+      </div><!-- end of .container-->
+    </section><!-- <section> close ============================-->
+    <!-- ============================================-->
 
 
 

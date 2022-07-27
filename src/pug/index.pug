@@ -1,13 +1,11 @@
 extends layouts/LayoutTheme
 include mixins/home/Hero
-include mixins/navbar/Navbar
-include mixins/services/Services
-include mixins/offers/Offers
-include mixins/reviews/Reviews
-include mixins/faq/FAQ
-include mixins/blogs/Blogs
-include mixins/promo/Promo
-include mixins/footer/Footer
+include mixins/home/Services
+include mixins/home/Offers
+include mixins/home/Reviews
+include mixins/home/FAQ
+include mixins/home/Blogs
+
 
 
 
@@ -24,7 +22,6 @@ prepend scripts
 
 
 block content
-  +Navbar(true, pageInfo.pageTitle)
   +Hero
   +Services
   +FirstOffer
@@ -32,8 +29,6 @@ block content
   +Reviews
   +FAQ
   +Blogs
-  +Promo
-  +Footer
 
 
 

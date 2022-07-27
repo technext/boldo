@@ -1,0 +1,45 @@
+mixin Blogs
+    -
+        var blogs = [
+            {
+                img:"assets/img/blog/1.png",
+                title:"Pitch termsheet backing validation focus release.",
+                category:"Category",
+                date:"November 22, 2021",
+                name:"Chandler Bing",
+                avatar:"assets/img/blog/profile1.png",
+            },
+            {
+                img:"assets/img/blog/2.png",
+                title:"Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
+                category:"Category",
+                date:"November 22, 2021",
+                name:"Rachel Green",
+                avatar:"assets/img/blog/profile2.png",
+            },
+            {
+                img:"assets/img/blog/3.png",
+                title:"Beta prototype sales iPad gen-z marketing network effects value proposition",
+                category:"Category",
+                date:"November 22, 2021",
+                name:"Monica Geller",
+                avatar:"assets/img/blog/profile3.png",
+            }
+        ]
+    #services
+        +Section
+            p.text-center.text-gray.fs-1 Our Blog
+            h2.mx-auto.text-center.fs-lg-6.fs-md-5.w-lg-75 Value proposition accelerator product management venture
+            .row.mt-7.gx-xl-7.gy-5.gy-md-0
+                each blog in blogs
+                    .col-lg-4.col-md-6
+                        img(src=`${blog.img}`, alt="").w-100
+                        .d-flex.align-items-center.gap-3.my-lg-4.my-3
+                            p.fw-bold.fs-small.m-0.text-black= blog.category
+                            p.m-0= blog.date
+                        h3.fs-1.lh-base= blog.title
+                        .d-flex.align-items-center.gap-2.my-4
+                            img(src=blog.avatar, alt="profile")
+                            p.m-0= blog.name
+            .text-center.mt-5
+              button.btn.btn-outlined.border-2.border-dark.text-dark.fs-1 Load More

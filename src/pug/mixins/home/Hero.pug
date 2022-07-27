@@ -1,16 +1,15 @@
 mixin Hero
   img(src="assets/img/hero/hero-bg.png", alt="").position-absolute.end-0.top-0.z-index-n2
-  #hero.bg-primary.pb-n1
+  .bg-dark
     +Section
       .row.align-items-center.py-5
         .col-lg-6.my-xl-5.my-lg-4.my-lg-0
-          h1.text-white.fw-normal.fs-3.fs-lg-4.fs-xl-6.lh-base Save time by building fast with Boldo Template
-          p.text-white.py-3.fw-thin.pe-7 Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage innovator success deployment non-disclosure.
-          .btns
-            button.btn.btn-success.text-black.me-3.border-2.border-success.mb-3 Buy Template
-            button.btn.btn-outlined.border-2.border-white.text-white.mb-3 Explore
-        .col-lg-6.text-lg-end.position-relative.z-index-2
-            img(src="assets/img/hero/hero-graphics.png", alt="").w-100.w-xl-75
+          h1.text-white.fs-3.fs-lg-4.fs-xl-6.lh-base Save time by building fast with Boldo Template
+          p.text-white.py-lg-3.py-2 Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage innovator success deployment non-disclosure.
+          button.btn.btn-success.text-black.me-3.border-2.border-success.mb-3 Buy Template
+          button.btn.btn-outlined.border-2.border-white.text-white.mb-3 Explore
+        .col-lg-6.text-lg-end
+            img(src="assets/img/hero/hero-graphics.png", alt="").img-fluid
       .swiper.mySwiper.mt-4
         .swiper-container.swiper-shadow.swiper-theme(data-swiper!={
               slidesPerView: 2,

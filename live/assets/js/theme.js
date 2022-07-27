@@ -71,14 +71,14 @@ var rgbaColor = function rgbaColor() {
 
 
 var colors = {
-  primary: '#0A2640',
+  primary: '#5EDCD4',
   secondary: '#748194',
   success: '#00d27a',
   info: '#27bcfd',
   warning: '#f5803e',
   danger: '#e63757',
   light: '#f9fafd',
-  dark: '#000'
+  dark: '#0A2640'
 };
 var grays = {
   white: '#fff',
@@ -374,7 +374,7 @@ var navbarInit = function navbarInit() {
     var allColors = _objectSpread(_objectSpread({}, utils.colors), utils.grays);
 
     var name = utils.getData(navbar, DataKey.NAVBAR_ON_SCROLL);
-    var colorName = Object.keys(allColors).includes(name) ? name : 'primary';
+    var colorName = Object.keys(allColors).includes(name) ? name : 'dark';
     var color = allColors[colorName];
     var bgClassName = "bg-".concat(colorName);
     var shadowName = 'shadow-transition';
