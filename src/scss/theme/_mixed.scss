@@ -1,25 +1,21 @@
 $assetPath: "/public/assets/img/hero/hero-bg.png";
 
-// minus padding
-.minus-margin {
-  margin-top: -5.65rem !important;
-}
-
 // hover
-.simple-hover {
+.offer-list-item {
   color: $black;
   transition: 0.3s ease;
   transition-property: color, background-color;
+  padding: 1.8rem 1rem;
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
   &:hover {
     background-color: $dark;
     color: white;
   }
-}
-
-// spacing
-.primary-spacing {
-  letter-spacing: 1px;
 }
 
 // accordion
@@ -42,7 +38,7 @@ $assetPath: "/public/assets/img/hero/hero-bg.png";
 
 // font extra learge
 
-.font-extra-learge {
+.font-extra-learge-container {
   @media only screen and (min-width:950px) and (max-width:1200px) {
     h1 {
       font-size: 4.5rem !important;

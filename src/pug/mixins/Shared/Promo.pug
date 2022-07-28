@@ -1,10 +1,12 @@
 mixin Promo
-  +Section("container bg-dark overflow-hidden")
+  +Section("container bg-dark overflow-hidden rounded-1")
     +Background({
       image: `${CWD}assets/img/promo/promo-bg.png`,
     })
-    .px-5.py-6.rounded-1.position-relative
-      h1.text-center.w-lg-75.w-100.mx-auto.fs-lg-6.fs-md-4.fs-3.text-white.lh-base.mb-5 An enterprise template to ramp up your company website
-      .d-md-flex.align-items.center.justify-content-center.gap-3.my-4
-        input(type='email', placeholder="Your email address").w-100.w-md-50.rounded-pill.border-0.form-control.text-dark.mb-3.mb-md-0.px-4.fs-1
-        button.btn.btn-success.text-dark.px-5.fs-1 Start now
+    .px-5.py-7.position-relative
+      h1.text-center.w-lg-75.mx-auto.fs-lg-6.fs-md-4.fs-3.text-white An enterprise template to ramp up your company website
+      .row.justify-content-center.mt-5
+        .col-auto.w-md-50
+          input(type='email', placeholder="Your email address").form-control.mb-2.border-light
+        .col-auto
+          button.btn.btn-success.text-dark.fs-1 Start now

@@ -4,29 +4,28 @@ mixin Values
       {
         title:"We are commited.",
         description:"Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration.",
-        img:"assets/img/values/1.png"
+        img:`${CWD}assets/img/values/1.png`
       },
       {
         title:"We are responsible.",
         description:"Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration.",
-        img:"assets/img/values/2.png"
+        img:`${CWD}assets/img/values/2.png`
       },
       {
         title:"We aim for progress.",
         description:"Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration.",
-        img:"assets/img/values/3.png"
+        img:`${CWD}assets/img/values/3.png`
       },
     ]
-  #values.bg-dark
-    +Section
-      .px-xl-8.px-md-5.px-3
-        p.text-light.fs-1 Our values
-        h1.text-white.fs-lg-6.fs-md-4.fs-3.my-lg-4.my-3 Things in we believe
-        p.text-light.w-lg-75.w-100.fs-lg-1 Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Traction stock user experience deployment beta innovator incubator focus.
-        each value in values
-          .d-sm-flex.my-5.gap-3.gap-md-5.gap-xl-0
-            .w-sm-25.mb-3.mb-sm-0
-              img(src=value.img, alt="").img-fluid
-            .w-sm-75
-              h2.text-white.fs-1.fs-lg-3.mb-lg-3= value.title
-              p.text-light.fs-lg-1.lg-base= value.description
+  +Section.bg-dark
+    .px-xl-8.px-md-5.px-3
+      p.text-light.fs-1 Our values
+      h1.text-white.fs-lg-6.fs-md-4.fs-3.my-lg-4.my-3 Things in we believe
+      p.text-light.w-lg-75.fs-1 Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Traction stock user experience deployment beta innovator incubator focus.
+      each value in values
+        .d-sm-flex.mt-5.gap-3.gap-md-5.gap-xl-0
+          .w-sm-25.mb-3.mb-sm-0
+            img(src=value.img, alt="").img-fluid
+          .w-sm-75
+            h1.text-white.fs-2.fs-lg-3.mb-lg-3= value.title
+            p.text-light.fs-1= value.description

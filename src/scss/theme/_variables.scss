@@ -64,6 +64,9 @@ $brand-colors: map-merge(('facebook': $facebook,
     $brand-colors
 );
 
+// btn border
+$input-btn-border-width: 2px !default;
+
 //*-----------------------------------------------
 //|   Border
 //-----------------------------------------------*/

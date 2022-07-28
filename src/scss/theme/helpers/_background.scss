@@ -13,7 +13,7 @@
   will-change: transform, opacity, filter;
   backface-visibility: hidden;
   background-repeat: no-repeat;
-  z-index: 0; 
+  z-index: 0;
 
   &.bg-right {
     left: auto;
@@ -29,23 +29,27 @@
     left: 0;
     right: 0;
   }
- 
+
   &.overlay-0:before {
     background: rgba(#000, 0.7);
   }
+
   &.overlay-1:before {
     background: rgba(#000, 0.55);
   }
+
   &.overlay-2:before {
     background: rgba(#000, 0.4);
   }
+
   &.overlay-3:before {
     background: rgba(#000, 0.88);
   }
-  &.overlay-youtube:before{
-    background: linear-gradient(0deg, rgba(0, 16, 58, 0.6), rgba(0,16, 58, 0.8)),
 
-  }  
+  &.overlay-youtube:before {
+    background: linear-gradient(0deg, rgba(0, 16, 58, 0.6), rgba(0, 16, 58, 0.8)),
+
+  }
 
   .bg-video {
     position: absolute;
@@ -67,12 +71,13 @@
   }
 }
 
-.bg-backdrop{
+.bg-backdrop {
   position: relative;
   background: rgba(242, 242, 242, 0.4);
   backdrop-filter: blur(1rem);
   border-radius: 16px;
   z-index: 1;
+
   &::before {
     position: absolute;
     content: '';
@@ -82,7 +87,8 @@
     border-radius: 16px;
     background: rgba(242, 242, 242, 0.4);
     z-index: -1;
-    .firefox &{
+
+    .firefox & {
       background: rgba(242, 242, 242, 1);
     }
   }
@@ -117,41 +123,51 @@
   background-image: var(--#{$variable-prefix}line-chart-gradient);
   background-position: center;
 }
+
 .bg-card-gradient {
   background-image: var(--#{$variable-prefix}card-gradient);
   background-position: center;
 }
+
 .bg-progress-gradient {
   background-image: var(--#{$variable-prefix}progress-gradient);
   background-position: center;
 }
+
 .bg-auth-circle-shape,
 .bg-auth-circle-shape-2 {
   display: none;
+
   @include media-breakpoint-up(lg) {
     display: block;
   }
 }
+
 .bg-auth-circle-shape {
   position: absolute;
   right: -8.75rem;
   top: -5.125rem;
 }
+
 .bg-auth-circle-shape-2 {
   position: absolute;
   left: -6.25rem;
   bottom: -2.4375rem;
 }
+
 .bg-auth-card-shape {
   background-position: 0 100%;
+
   @include media-breakpoint-up(md) {
     background-position: 0 133%;
   }
 }
+
 @mixin shape($bg-color) {
   position: relative;
   overflow: hidden;
   background-color: $bg-color;
+
   &:after,
   &:before {
     position: absolute;
@@ -162,8 +178,14 @@
 
 .bg-shape {
   @include shape(var(--#{$variable-prefix}bg-shape-bg));
-  &:after { background-image: var(--#{$variable-prefix}bg-shape-bg-ltd); }
-  &:before { background-image: var(--#{$variable-prefix}bg-shape-bg-dtl); }
+
+  &:after {
+    background-image: var(--#{$variable-prefix}bg-shape-bg-ltd);
+  }
+
+  &:before {
+    background-image: var(--#{$variable-prefix}bg-shape-bg-dtl);
+  }
 }
 
 .bg-circle-shape {
@@ -173,6 +195,7 @@
     left: 32%;
     top: -188%;
   }
+
   &:before {
     height: 332%;
     width: 45%;
@@ -180,6 +203,7 @@
     top: 0.5625rem;
   }
 }
+
 .modal-shape-header {
   &:before {
     height: 28.9375rem;
@@ -187,6 +211,7 @@
     right: 23%;
     top: -357%;
   }
+
   &:after {
     height: 289%;
     width: 45%;
@@ -194,6 +219,7 @@
     top: 2.5rem;
   }
 }
+
 .showcase-page-gradient {
   background: linear-gradient(0deg, rgba(163, 20, 20, 0.5), rgba(27, 27, 27, 0.5));
   mix-blend-mode: normal;
@@ -203,7 +229,7 @@
   background-color: var(--#{$variable-prefix}transparent-50);
 }
 
-.bg-portfolio-img{
+.bg-portfolio-img {
   background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(64px);
   border-radius: 16px;
@@ -214,4 +240,3 @@
 /*-----------------------------------------------
 | Footer Background
 -----------------------------------------------*/
-
