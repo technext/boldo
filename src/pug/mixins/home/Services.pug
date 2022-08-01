@@ -20,11 +20,11 @@ mixin Services
     +Section
         p.text-center.fs-1 Our Services
         h2.mx-auto.text-center.fs-lg-6.fs-md-5.w-lg-75 Handshake infographic mass market crowdfunding iteration.
-        .row.mt-5.gx-xl-7
+        .row.gx-xl-7.mt-5
             each service in services
-                .col-lg-4.col-md-6.mb-3.mb-lg-0
-                    img(src=`${service.img}`, alt="").img-fluid
-                    h4.mt-3= service.title
-                    p.fs-1= service.description
+                .col-md-4.mb-6.mb-md-0.text-center.text-md-start
+                    img(src=`${service.img}`, alt="").w-50.w-md-100
+                    h4.mt-3.my-1= service.title
+                    p.fs-1.mb-0= service.description
                     a(href="#").text-dark.fs-1.pb-2.fw-bold.border-black.border-bottom.text-decoration-none Explore page
                         i.fa-solid.fa-arrow-right.ms-2

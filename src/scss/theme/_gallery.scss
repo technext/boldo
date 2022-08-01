@@ -1,13 +1,14 @@
 .gallery-wraper {
-  @media only screen and (max-width:992px) {
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
+  @include media-breakpoint-up(sm) {
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-gap: 2.5rem;
+    margin-top: -12.5rem;
   }
 
   display: grid;
-  grid-template-columns: 1fr 1.2fr 1fr;
-  grid-gap: 40px;
-  margin-top: -200px;
+  grid-gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+
 
   .img-wraper {
     &:nth-child(2) {
@@ -16,7 +17,7 @@
     }
 
     img {
-      border-radius: 30px;
+      border-radius: 1.87rem;
       height: 100%;
       object-fit: cover;
     }

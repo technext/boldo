@@ -12,7 +12,6 @@ $container-max-widths: map-merge((sm: 576px,
       md: 768px,
       lg: 992px,
       xl: 1200px,
-      xxl: 1200px,
     ),
     $container-max-widths
 );
@@ -103,10 +102,10 @@ $spacers: (
   ) !default;
 
 $spacers: map-merge((0: 0,
-      1: $spacer * 0.25,
-      2: $spacer * 0.5,
-      3: $spacer * 2,
-      4: $spacer * 1.8,
+      1: $spacer * .25,
+      2: $spacer * .5,
+      3: $spacer,
+      4: $spacer * 1.5,
       5: $spacer * 3,
       6: $spacer * 4,
       7: $spacer * 5,
@@ -167,7 +166,7 @@ $font-sizes: map-merge(('-2': math.div(1, pow($type-scale, 2)) * $font-size-base
       6: pow($type-scale, 6) * $font-size-base,
       7: pow($type-scale, 7) * $font-size-base,
       8: pow($type-scale, 8) * $font-size-base,
-    ),
+      9:6rem),
     $font-sizes
 );
 
@@ -190,7 +189,7 @@ $line-height-base: 1.45 !default;
 $h1-font-size: map_get($font-sizes, 5) !default;
 $h2-font-size: map_get($font-sizes, 4) !default;
 $h3-font-size: map_get($font-sizes, 3) !default;
-$h4-font-size: map_get($font-sizes, 2) !default;
+$h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: map_get($font-sizes, 1) !default;
 $h6-font-size: map_get($font-sizes, '-1') !default;
 
@@ -238,7 +237,7 @@ $btn-sparrow-hover-box-shadow: var(--#{$variable-prefix}btn-sparrow-hover-box-sh
 //|   Buttons and Forms
 //-----------------------------------------------*/
 $input-btn-padding-y: 1rem !default;
-$input-btn-padding-x: 3.5rem !default;
+$input-btn-padding-x: 3rem !default;
 
 $input-btn-padding-y-sm: 0.4rem !default;
 $input-btn-padding-x-sm: 1.2rem !default;
@@ -278,7 +277,7 @@ $input-bg: var(--#{$variable-prefix}input-bg) !default;
 $form-file-button-bg: $gray-900  !default;
 $form-file-button-color: $gray-300  !default;
 
-$input-padding-x: $input-btn-padding-y  !default;
+$input-padding-x: 1.8rem !default;
 $input-padding-x-sm: $input-btn-padding-y-sm  !default;
 $input-padding-x-lg: $input-btn-padding-y-lg  !default;
 $input-box-shadow: 'null' !default;
@@ -302,8 +301,8 @@ $navbar-dark-color: $white  !default;
 $navbar-light-color: $white  !default;
 
 $navbar-dark-color: var(--#{$variable-prefix}navbar-dark-color) !default;
-$navbar-dark-hover-color: var(--#{$variable-prefix}navbar-dark-hover-color) !default;
-$navbar-dark-active-color: var(--#{$variable-prefix}navbar-dark-active-color) !default;
+$navbar-dark-hover-color: $light  !default;
+$navbar-dark-active-color: $success  !default;
 $navbar-dark-disabled-color: var(--#{$variable-prefix}navbar-dark-disabled-color) !default;
 $navbar-dark-toggler-border-color: var(--#{$variable-prefix}navbar-dark-toggler-border-color) !default;
 $navbar-light-color: var(--#{$variable-prefix}navbar-light-color) !default;

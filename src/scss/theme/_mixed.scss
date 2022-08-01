@@ -7,10 +7,10 @@ $assetPath: "/public/assets/img/hero/hero-bg.png";
   transition-property: color, background-color;
   padding: 1.8rem 1rem;
   margin: 1.5rem 0;
-  border-radius: 5px;
+  border-radius: 0.312rem;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 
   &:hover {
     background-color: $dark;
@@ -34,49 +34,4 @@ $assetPath: "/public/assets/img/hero/hero-bg.png";
   &::after {
     background-position: 50% 50% !important;
   }
-}
-
-// font extra learge
-
-.font-extra-learge-container {
-  @media only screen and (min-width:950px) and (max-width:1200px) {
-    h1 {
-      font-size: 4.5rem !important;
-    }
-  }
-
-  @media only screen and (max-width:768px) {
-    h1 {
-      font-size: 4rem !important;
-    }
-
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 6rem;
-  }
-}
-
-// bg-holder
-
-.bg-holder {
-  @media only screen and (max-width:768px) {
-    top: -10rem !important;
-    right: -8rem;
-  }
-
-  @media only screen and (max-width:580px) {
-    top: -12rem !important;
-    right: -6rem;
-  }
-
-  @media only screen and (max-width:500px) {
-    top: -20rem !important;
-    right: -4rem;
-  }
-
-  right: -14rem;
-  left: initial !important;
-  top: -6rem !important;
 }

@@ -15,12 +15,11 @@ $gray-900: #445356 !default;
 $gray-1000: #384345 !default;
 $gray-1100: #0A2640 !default;
 $black: #000000 !default;
-$footer-black: #1B1B1B !default;
 
 
 $grays: (
   ) !default;
-$grays: map-merge(('footer-black': $footer-black,
+$grays: map-merge(('footer-black': $black,
       'black': $black,
       '100': $gray-100,
       '200': $gray-200,

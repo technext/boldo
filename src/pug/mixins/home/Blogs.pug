@@ -26,19 +26,24 @@ mixin Blogs
                 avatar:`${CWD}assets/img/blog/profile3.png`,
             }
         ]
-    +Section
+    +Section.pb-0
         p.text-center.text-gray.fs-1 Our Blog
         h2.mx-auto.text-center.fs-lg-6.fs-md-5.w-lg-75 Value proposition accelerator product management venture
         .row.mt-7.gx-xl-7
             each blog in blogs
-                .col-lg-4.col-md-6.mb-5.mb-lg-0
-                    img(src=`${blog.img}`, alt="").img-fluid
-                    .d-flex.align-items-center.gap-3.my-lg-4.my-3
-                        p.fw-bold.mb-0.text-black= blog.category
-                        p.mb-0= blog.date
-                    h5= blog.title
-                    .d-flex.align-items-center.gap-2.mt-3
-                        img(src=blog.avatar, alt="").img-fluid
-                        p.mb-0= blog.name
-        .text-center.mt-5
+                .col-md-4.text-center.text-md-start.h-auto.mb-5
+                    .d-flex.justify-content-between.flex-column.h-100
+                        a(href="#")
+                            img(src=`${blog.img}`, alt="").w-75.w-md-100.rounded-2
+                        .d-flex.align-items-center.justify-content-center.justify-content-md-start.gap-2.mt-3
+                            a(href="#")
+                                p.fw-bold.mb-0.text-black= blog.category
+                            p.mb-0= blog.date
+                        a(href="#")
+                            h5.mt-1.mb-3.fs-0.fs-md-1= blog.title
+                        .d-flex.align-items-center.justify-content-center.justify-content-md-start.gap-3
+                            img(src=blog.avatar, alt="").img-fluid
+                            a(href="#")
+                                p.mb-0.text-gray= blog.name
+        .text-center.mb-3
             button.btn.btn-outline-dark Load More

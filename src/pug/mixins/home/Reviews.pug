@@ -26,10 +26,9 @@ mixin Reviews
                 avatar:`${CWD}assets/img/review/1.png`
             },
         ]
-    +Section.bg-dark
-        h1.w-md-75.text-white.fs-lg-5.fs-md-3.fs-2 An enterprise template to ramp
-            br
-            | up your company website
+    +Section.bg-dark.pt-6
+        .col-md-6
+            h1.text-white.fs-lg-5.fs-md-3.fs-2 An enterprise template to ramp up your company website
         .swiper.mt-7
             .swiper-container.swiper-theme(data-swiper!={
                 slidesPerView: 1,
@@ -44,7 +43,7 @@ mixin Reviews
                     },
                     1025: {
                         slidesPerView: 3,
-                        spaceBetween: 30,
+                        spaceBetween: 40,
                     },
                 },
                 spaceBetween: 10,
@@ -63,13 +62,14 @@ mixin Reviews
             })
                 .swiper-wrapper
                     each review in reviews
-                        .swiper-slide.bg-white.p-5.rounded-1
-                            h3.text-black.fs-2= review.description
-                            .d-flex.align-items-center.gap-3.mt-5
-                                img(src=review.avatar, alt="")
-                                .text-black
-                                    p.mb-0= review.name
-                                    small= review.designation
+                        .swiper-slide.bg-white.p-5.rounded-3.h-auto
+                            .d-flex.flex-column.justify-content-between.h-100
+                                h4.text-black= review.description
+                                .d-flex.align-items-center.gap-3.mt-5
+                                    img(src=review.avatar, alt="")
+                                    .text-black
+                                        p.mb-0.fw-bold.text-dark= review.name
+                                        small= review.designation
             .swiper-button-next
                 span.fas.fa-arrow-right.fs-lg-3.fs-2
             .swiper-button-prev

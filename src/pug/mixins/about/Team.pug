@@ -24,7 +24,8 @@ mixin Team
       p.text-gray.fs-1.w-lg-75 Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Traction stock user experience deployment beta innovator incubator focus.
     .row.mt-7
       each member in team
-        .col-lg-4.col-sm-6.mb-5.mb-lg-0.text-center.text-sm-left
-          img(src=member.img, alt="").img-fluid
-          h1.fs-3.my-3= member.name
+        .col-md-4.col-sm-6.mb-5.mb-lg-0.text-center.text-sm-left
+          a(href="#")
+            img(src=member.img, alt="").img-fluid
+          h1.fs-3.mt-3= member.name
           p.fs-1= member.designation

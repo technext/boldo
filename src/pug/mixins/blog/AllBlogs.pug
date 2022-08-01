@@ -50,18 +50,23 @@ mixin AllBlogs
           avatar:`${CWD}assets/img/blog/profile3.png`,
       },
     ]
-  +Section.pt-0
+  +Section.py-0
     h1.fs-lg-6.fs-md-5.fs-3 Letest News
     .row.mt-5.gx-xl-7
       each blog in blogs
-        .col-lg-4.col-md-6.mb-5
-          img(src=blog.img, alt="").img-fluid
-          .d-flex.align-items-center.gap-3.my-4
-            p.fw-bold.mb-0.text-black= blog.category
-            p.mb-0= blog.date
-          p.fs-1.text-black= blog.title
-          .d-flex.align-items-center.gap-2.my-4
-            img(src=blog.avatar, alt="").img-fluid
-            p.mb-0= blog.name
-    .text-center
+        .col-lg-4.col-md-6.mb-5.mb-md-0.text-center.text-md-start.h-auto
+          .d-flex.justify-content-between.flex-column.h-100
+            a(href="#")
+              img(src=blog.img, alt="").w-md-100.w-75.rounded-2
+            .d-flex.align-items-center.justify-content-center.justify-content-md-start.gap-2.mt-3
+              a(href="#")
+                p.fw-bold.mb-0.text-black= blog.category
+              p.mb-0= blog.date
+            a(href="#")
+              h5.mt-1.mb-3.fs-0.fs-md-1= blog.title
+            .d-flex.align-items-center.justify-content-center.justify-content-md-start.gap-3.mb-md-5
+              img(src=blog.avatar, alt="").img-fluid
+              a(href="#")
+                p.mb-0.text-gray= blog.name
+    .text-center.mb-4
       button.btn.btn-outline-dark Load More

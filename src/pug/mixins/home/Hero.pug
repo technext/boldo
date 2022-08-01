@@ -2,15 +2,16 @@ mixin Hero
   .bg-dark
     img(src=`${CWD}assets/img/hero/hero-bg.png`, alt="").img-fluid.position-absolute.end-0
     +Section
-      .row.align-items-center.py-7
-        .col-lg-6
-          h1.text-white.fs-3.fs-lg-4.fs-xl-6 Save time by building fast with Boldo Template
+      .row.align-items-center.py-lg-8.py-6
+        .col-lg-6.text-center.text-lg-start
+          h1.text-white.fs-5.fs-xl-6 Save time by building fast with Boldo Template
           p.text-white.py-lg-3.py-2 Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage innovator success deployment non-disclosure.
-          button.btn.btn-success.text-black.me-3.mb-3 Buy Template
-          button.btn.btn-outline-light.mb-3 Explore
-        .col-lg-6.text-lg-end
+          .d-sm-flex.align-items-center.gap-3
+            button.btn.btn-success.text-black.mb-3.w-75 Buy Template
+            button.btn.btn-outline-light.mb-3.w-75 Explore
+        .col-lg-6.text-center.text-lg-end.mt-3.mt-lg-0
             img(src=`${CWD}assets/img/hero/hero-graphics.png`, alt="").img-fluid
-      .swiper.mt-4
+      .swiper
         .swiper-container.swiper-shadow.swiper-theme(data-swiper!={
               slidesPerView: 2,
               breakpoints: {
@@ -57,5 +58,5 @@ mixin Hero
               +SwiperSlideImg(`${CWD}assets/img/logos/presto.png`)
 
 mixin SwiperSlideImg(imgSrc)
-  .swiper-slide
+  .swiper-slide.text-center
     img(src=imgSrc, alt="")

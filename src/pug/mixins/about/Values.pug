@@ -23,9 +23,9 @@ mixin Values
       h1.text-white.fs-lg-6.fs-md-4.fs-3.my-lg-4.my-3 Things in we believe
       p.text-light.w-lg-75.fs-1 Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Traction stock user experience deployment beta innovator incubator focus.
       each value in values
-        .d-sm-flex.mt-5.gap-3.gap-md-5.gap-xl-0
-          .w-sm-25.mb-3.mb-sm-0
+        .row.mt-5
+          .col-md-3
             img(src=value.img, alt="").img-fluid
-          .w-sm-75
-            h1.text-white.fs-2.fs-lg-3.mb-lg-3= value.title
+          .col-md-9.mt-2.mb-md-0
+            h1.text-white.fs-2.fs-lg-3.my-2= value.title
             p.text-light.fs-1= value.description

@@ -1,22 +1,22 @@
 mixin Footer
-  +Section
-    .row
-      .col-lg-6.col-md-4
+  +Section.pt-0
+    .row.justify-content-between
+      .col-lg-6.col-sm-12
         a(href="index.html")
-          img(src=`${CWD}assets/img/black-logo.png`, alt="").img-fluid.mb-5
+          img(src=`${CWD}assets/img/black-logo.png`, alt="").img-fluid.mt-5.mb-4
         p.w-lg-75.text-gray Social media validation business model canvas graphical user interface launch party creative facebook iPad twitter.
-      .col-lg-2.col-md-4
-        h3.fw-bold.fs-1 Landings
-        ul.list-unstyled.mt-5
+      .col-lg-2.col-sm-4
+        h3.fw-bold.fs-1.mt-5.mb-4 Landings
+        ul.list-unstyled
           li.my-3.col-md-4
             a(href="#") Home
           li.my-3
             a(href="#") Products
           li.my-3
             a(href="#") Services
-      .col-lg-2.col-md-4
-        h3.fw-bold.fs-1 Company
-        ul.list-unstyled.mt-5
+      .col-lg-2.col-sm-4
+        h3.fw-bold.fs-1.mt-5.mb-4 Company
+        ul.list-unstyled
           li.my-3
             a(href="#") Home
           li.my-3
@@ -24,9 +24,9 @@ mixin Footer
             span.py-1.px-2.rounded-2.bg-success.fw-bold.text-dark.ms-2 Hiring!
           li.my-3
             a(href="#") Services
-      .col-lg-2.col-md-4
-        h3.fw-bold.fs-1 Resources
-        ul.list-unstyled.mt-5
+      .col-lg-2.col-sm-4
+        h3.fw-bold.fs-1.mt-5.mb-4 Resources
+        ul.list-unstyled
           li.mb-3
             a(href="#") Home
           li.mb-3
