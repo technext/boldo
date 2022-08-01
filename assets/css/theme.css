@@ -3416,23 +3416,23 @@ progress {
   height: 1.45em;
 }
 .form-control::-webkit-input-placeholder {
-  color: var(--fg-600);
+  color: #000000;
   opacity: 1;
 }
 .form-control::-moz-placeholder {
-  color: var(--fg-600);
+  color: #000000;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: var(--fg-600);
+  color: #000000;
   opacity: 1;
 }
 .form-control::-ms-input-placeholder {
-  color: var(--fg-600);
+  color: #000000;
   opacity: 1;
 }
 .form-control::placeholder {
-  color: var(--fg-600);
+  color: #000000;
   opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {
