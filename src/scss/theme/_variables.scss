@@ -264,7 +264,7 @@ $btn-close-width: 1.2em !default;
 $input-disabled-bg: var(--#{$variable-prefix}200) !default;
 $input-group-addon-bg: var(--#{$variable-prefix}200) !default;
 $input-border-color: var(--#{$variable-prefix}input-border-color) !default;
-$input-placeholder-color: var(--#{$variable-prefix}600) !default;
+$input-placeholder-color: $black  !default;
 $input-color: var(--#{$variable-prefix}input-color) !default;
 $form-check-margin-bottom: 0.34375rem !default;
 $form-label-font-size: $font-size-sm  !default;
