@@ -309,7 +309,7 @@ $navbar-light-color: var(--#{$variable-prefix}navbar-light-color) !default;
 $navbar-light-hover-color: var(--#{$variable-prefix}navbar-light-hover-color) !default;
 $navbar-light-active-color: var(--#{$variable-prefix}navbar-light-active-color) !default;
 $navbar-light-disabled-color: var(--#{$variable-prefix}navbar-light-disabled-color) !default;
-$navbar-light-toggler-border-color: var(--#{$variable-prefix}navbar-light-toggler-border-color) !default;
+$navbar-dark-toggler-border-color: transparent;
 
 $navbar-font-size: $font-size-base  !default;
 $navbar-padding-y: map_get($spacers, 2) !default;

@@ -5961,7 +5961,7 @@ textarea.form-control-lg {
 }
 .navbar-light .navbar-toggler {
   color: #ffffff;
-  border-color: var(--fg-navbar-light-toggler-border-color);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%239da9bb' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M0 6h30M0 14h30M0 22h30'/%3E%3C/svg%3E");
@@ -5996,7 +5996,7 @@ textarea.form-control-lg {
 }
 .navbar-dark .navbar-toggler {
   color: #ffffff;
-  border-color: var(--fg-navbar-dark-toggler-border-color);
+  border-color: transparent;
 }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%239da9bb' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M0 6h30M0 14h30M0 22h30'/%3E%3C/svg%3E");
